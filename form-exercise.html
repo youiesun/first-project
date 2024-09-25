@@ -1,0 +1,113 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100%;
+            display: grid;
+            place-content: center;
+        }
+        form{
+            border: 1px solid;
+            width:600px;
+            border: 1px solid black;
+            height: 600px;
+            margin-left: 300px;
+            background-color: rgb(218, 218, 213);
+        }
+        .container{
+            width: 1200px;
+            background-color:rgb(202, 202, 194);
+            height: 800px;
+        }
+        button{
+            width: 200px;
+            font-size: 20px;
+            padding: 10px;
+            background-color: white;
+            
+            margin-bottom: 10px;
+        }
+        .b2{
+            margin-left: 10px;
+            border: none;
+            border-bottom: 3px solid blue;
+            cursor: pointer;
+        }
+        .b1{
+            margin-left: 300px;
+            border: none;
+            border-bottom: 3px solid blue;
+            cursor: pointer;
+        }
+        form>label{
+            display: flex;
+            flex-direction: column;
+            font-size: 30px;
+            line-height: 70px;
+            color: blue;
+            font-weight: bold;
+            
+        }
+        input{
+            font-size: 35px;
+            border: none;
+            outline: none;
+            width: 80%;
+        }
+        .name{
+            margin-left: 100px;
+            margin-top: 50px;
+        }
+        .mail{
+            margin-left: 100px;
+        }
+        .pass{
+            margin-left: 100px;
+        }
+        input::placeholder{
+            font-size: 20px;
+        }
+        .b3{
+            margin-top: 50px;
+            width: 400px;
+            margin-left: 100px;
+            background-color: blue;
+            color: #fff
+        }
+        .btn{
+            margin-top: 40px;
+        }
+        a{
+            display: block;
+            margin-top: 40px;
+            font-size: 25px;
+            margin-left: 200px;
+            color: red
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="btn">
+         <button class="b1">Sign Up</button>
+        <button class="b2">sign In</button>
+        </div>
+        
+        <form action="">
+            <label class="name" for="">Full Name: <input placeholder="Full Name" type="text"></label>
+            <label class="mail" for="">Email: <input placeholder="Email" type="email"></label>
+            <label class="pass" for="">Password: <input placeholder="Password" type="password"></label>
+            <button class="b3">Sign In</button>
+            <a href="#">I have an Account</a>
+        </form>
+    </div>
+</body>
+</html>

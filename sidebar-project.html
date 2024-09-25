@@ -1,0 +1,160 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "SUSE", sans-serif;
+        }
+        @import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+        .side-bar{
+            width: 300px;
+            height: 1200px;
+            background-color: black;
+            position: fixed;
+        }
+        .nav-bar>ul>li{
+            font-size: 30px;
+            line-height: 90px;
+            transition: all 1s ease;
+        }
+        .nav-bar>ul>li>a:hover{
+            background-color:white;
+            color: black;
+            scale: 1.03;
+        }
+        .nav-bar>ul>li>a{
+            text-decoration: none;
+            color:white;
+            transition: all 1s ease;
+           display: block;
+           padding-left: 15px;
+        }
+        .logo{
+            border: 1px solid;
+            height: 100px;
+            display:flex ;
+            align-items: center;
+            position: relative;
+        }
+        .vscode{
+            font-size: 70px;
+            margin-left: 50px;
+            color: aqua;
+        }
+        .name{
+            font-size: 30px;
+            color: white;
+        }
+        #btn{
+            font-size: 30px;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        .input{
+            font-size: 25;
+            width: 100%;
+            line-height: 90px;
+            background-color: #566573 ;
+           color: white;
+           border-radius: 100px;
+           margin-bottom: 15px;
+        }
+        input::placeholder{
+            color: white;
+            padding-left: 30px;
+        }
+        .pf{
+            width: 80px;
+            border-radius: 100px;
+        }
+        .pf-name{
+            font-size: 25px;
+            color: white;
+            margin-left: 10px
+        }
+        .user{
+            width: 100%;
+            display: flex;
+            position: absolute;
+            bottom: 0;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="side-bar">
+        <div class="logo">
+            <div class="vscode">
+                <i class='bx bxl-visual-studio'></i>
+            </div>
+            <div class="name">Vscode</div>
+            <i class='bx bxs-widget' id="btn" ></i>
+        </div>
+        <label for="text"><input type="text" placeholder="Search" class="input"></label>
+        <div class="nav-bar">
+        <ul>
+            <li>
+                <a href="#">
+                    <i class='bx bx-food-menu' ></i>
+                    <span>Menu</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-user' ></i>
+                    <span>User</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-message-rounded' ></i>
+                    <span>Message</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-pie-chart-alt-2' ></i>
+                    <span>Analysis</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-folder' ></i>
+                    <span>File manager</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-cart' ></i>
+                    <span>Order</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-heart' ></i>
+                    <span>Saved</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-cog' ></i>
+                    <span>Setting</span>
+                </a>
+            </li>
+        </ul>
+     </div>
+     <div class="user">
+        <div><img class="pf" src="https://i.pinimg.com/736x/f2/59/02/f259021dae7299aae79d65ec06c4ab59.jpg" alt=""></div>
+        <div class="pf-name">Arima Kana</div>
+     </div>
+    </div>
+</body>
+</html>
